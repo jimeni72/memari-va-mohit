@@ -1,0 +1,159 @@
+GNOME_KEYRING_CONTROL=/run/user/1000/keyring-Zysglf
+GNOME_KEYRING_CONTROL=/run/user/1000/keyring-Zysglf
+SSH_AUTH_SOCK=/run/user/1000/keyring-Zysglf/ssh
+GNOME_KEYRING_CONTROL=/run/user/1000/keyring-Zysglf
+GNOME_KEYRING_CONTROL=/run/user/1000/keyring-Zysglf
+SSH_AUTH_SOCK=/run/user/1000/keyring-Zysglf/ssh
+GPG_AGENT_INFO=/run/user/1000/keyring-Zysglf/gpg:0:1
+compiz (core) - Info: Loading plugin: core
+compiz (core) - Info: Starting plugin: core
+compiz (core) - Info: Loading plugin: ccp
+compiz (core) - Info: Starting plugin: ccp
+compizconfig - Info: Backend     : gsettings
+compizconfig - Info: Integration : true
+compizconfig - Info: Profile     : unity
+
+** (process:9461): CRITICAL **: bluez.vala:104: GDBus.Error:org.bluez.Error.NoSuchAdapter: No such adapter
+
+(process:9471): indicator-application-service-WARNING **: Unable to get watcher name 'org.kde.StatusNotifierWatcher'
+
+(process:9471): indicator-application-service-WARNING **: Name Lost
+
+(process:9426): GLib-GIO-WARNING **: g_settings_set_value: value for key 'visual-bell-type' in schema 'org.gnome.desktop.wm.preferences' is outside of valid range
+
+(process:9426): GLib-GIO-WARNING **: g_settings_set_value: value for key 'visual-bell-type' in schema 'org.gnome.desktop.wm.preferences' is outside of valid range
+
+(process:9426): GLib-GIO-WARNING **: g_settings_set_value: value for key 'visual-bell-type' in schema 'org.gnome.desktop.wm.preferences' is outside of valid range
+
+(process:9426): GLib-GIO-WARNING **: g_settings_set_value: value for key 'visual-bell-type' in schema 'org.gnome.desktop.wm.preferences' is outside of valid range
+
+(process:9426): GLib-GIO-WARNING **: g_settings_set_value: value for key 'visual-bell-type' in schema 'org.gnome.desktop.wm.preferences' is outside of valid range
+
+(process:9426): GLib-GIO-WARNING **: g_settings_set_value: value for key 'visual-bell-type' in schema 'org.gnome.desktop.wm.preferences' is outside of valid range
+
+** (nm-applet:9481): CRITICAL **: nm_secret_agent_register: assertion 'priv->registered == FALSE' failed
+compiz (core) - Info: Loading plugin: composite
+compiz (core) - Info: Starting plugin: composite
+compiz (core) - Info: Loading plugin: opengl
+compiz (core) - Info: Unity is not supported by your hardware. Enabling software rendering instead (slow).
+compiz (core) - Info: Unity is fully supported by your hardware.
+compiz (core) - Info: Starting plugin: opengl
+compiz (core) - Info: Loading plugin: imgpng
+compiz (core) - Info: Starting plugin: imgpng
+compiz (core) - Info: Loading plugin: resize
+compiz (core) - Info: Starting plugin: resize
+compiz (core) - Info: Loading plugin: wall
+compiz (core) - Info: Starting plugin: wall
+compiz (core) - Info: Loading plugin: move
+compiz (core) - Info: Starting plugin: move
+compiz (core) - Info: Loading plugin: regex
+compiz (core) - Info: Starting plugin: regex
+compiz (core) - Info: Loading plugin: copytex
+compiz (core) - Info: Starting plugin: copytex
+compiz (core) - Info: Loading plugin: animation
+compiz (core) - Info: Starting plugin: animation
+compiz (core) - Info: Loading plugin: vpswitch
+compiz (core) - Info: Starting plugin: vpswitch
+compiz (core) - Info: Loading plugin: grid
+compiz (core) - Info: Starting plugin: grid
+compiz (core) - Info: Loading plugin: commands
+compiz (core) - Info: Starting plugin: commands
+compiz (core) - Info: Loading plugin: mousepoll
+compiz (core) - Info: Starting plugin: mousepoll
+compiz (core) - Info: Loading plugin: unitymtgrabhandles
+compiz (core) - Info: Starting plugin: unitymtgrabhandles
+compiz (core) - Info: Loading plugin: compiztoolbox
+compiz (core) - Info: Starting plugin: compiztoolbox
+compiz (core) - Info: Loading plugin: snap
+compiz (core) - Info: Starting plugin: snap
+compiz (core) - Info: Loading plugin: fade
+compiz (core) - Info: Starting plugin: fade
+compiz (core) - Info: Loading plugin: expo
+compiz (core) - Info: Starting plugin: expo
+compiz (core) - Info: Loading plugin: workarounds
+compiz (core) - Info: Starting plugin: workarounds
+compiz (core) - Info: Loading plugin: place
+compiz (core) - Info: Starting plugin: place
+compiz (core) - Info: Loading plugin: scale
+compiz (core) - Info: Starting plugin: scale
+compiz (core) - Info: Loading plugin: ezoom
+compiz (core) - Info: Starting plugin: ezoom
+compiz (core) - Info: Loading plugin: session
+compiz (core) - Info: Starting plugin: session
+I/O warning : failed to load external entity "/home/iran/.compiz/session/10b47a74c37e1b375145426880275693200000092430001"
+compiz (core) - Info: Loading plugin: unityshell
+compiz (core) - Info: Starting plugin: unityshell
+WARN  2016-01-31 11:33:30 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'org.gnome.Shell' yet as we don't have a connection, waiting for it...
+ERROR 2016-01-31 11:33:30 unity.debug.interface DebugDBusInterface.cpp:196 Unable to load entry point in libxpathselect: libxpathselect.so.1.4: cannot open shared object file: No such file or directory
+WARN  2016-01-31 11:33:30 xim.controller XIMController.cpp:103 IBus natively supported.
+WARN  2016-01-31 11:33:30 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'com.canonical.Unity.Launcher' yet as we don't have a connection, waiting for it...
+WARN  2016-01-31 11:33:30 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'com.canonical.Unity.Dash' yet as we don't have a connection, waiting for it...
+WARN  2016-01-31 11:33:31 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'org.gnome.SessionManager.EndSessionDialog' yet as we don't have a connection, waiting for it...
+WARN  2016-01-31 11:33:31 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'com.canonical.Unity.Session' yet as we don't have a connection, waiting for it...
+WARN  2016-01-31 11:33:31 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'org.gnome.ScreenSaver' yet as we don't have a connection, waiting for it...
+compiz (core) - Warn: Attempted to restack relative to 0x2a00027 which is not a child of the root window or a window compiz owns
+ERROR 2016-01-31 11:33:31 unity.glib.dbus.server GLibDBusServer.cpp:524 DBus name lost 'org.gnome.Shell'
+ERROR 2016-01-31 11:33:31 unity.glib.dbus.server GLibDBusServer.cpp:524 DBus name lost 'com.canonical.Unity'
+
+(nm-applet:9481): nm-applet-WARNING **: Could not find ShellVersion property on org.gnome.Shell after 5 tries
+
+(nm-applet:9481): Gtk-CRITICAL **: gtk_widget_get_accessible: assertion 'GTK_IS_WIDGET (widget)' failed
+
+** (nm-applet:9481): CRITICAL **: atk_object_add_relationship: assertion 'ATK_IS_OBJECT (target)' failed
+
+(nm-applet:9481): Gtk-CRITICAL **: gtk_table_attach: assertion 'GTK_IS_WIDGET (child)' failed
+
+(zeitgeist-datahub:9978): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+
+(zeitgeist-datahub:9978): GLib-GObject-CRITICAL **: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+failed to create drawable
+compiz (core) - Warn: glXCreatePixmap failed
+WARN  2016-01-31 08:03:55 unity.iconloader IconLoader.cpp:755 Unable to load icon file:/// at size -1x22: Can't open directory
+
+(gnome-terminal:10074): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+/var/lib/dpkg/lock: 
+Error loading .desktop file /usr/share/applications/gnome-activity-log-manager-panel.desktop: constructor returned NULL
+Error loading .desktop file /usr/share/app-install/desktop/activity-log-manager:gnome-activity-log-manager-panel.desktop: constructor returned NULL
+failed to create drawable
+compiz (core) - Warn: glXCreatePixmap failed
+failed to create drawable
+compiz (core) - Warn: glXCreatePixmap failed
+ERROR 2016-01-31 09:35:01 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-01-31 09:35:01 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-01-31 09:35:01 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-01-31 10:09:02 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-01-31 10:09:02 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-01-31 10:09:02 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-01-31 10:17:13 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-01-31 10:17:13 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-01-31 10:17:13 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-01-31 11:16:36 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-01-31 11:16:36 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-01-31 11:16:36 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-01-31 11:25:40 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-01-31 11:25:40 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-01-31 11:25:40 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+
+(nautilus:9464): GdkPixbuf-CRITICAL **: gdk_pixbuf_loader_close: assertion 'GDK_IS_PIXBUF_LOADER (loader)' failed
+
+(nautilus:9464): GdkPixbuf-CRITICAL **: gdk_pixbuf_loader_get_pixbuf: assertion 'GDK_IS_PIXBUF_LOADER (loader)' failed
+
+(nautilus:9464): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-01-31 12:08:21 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-01-31 12:08:21 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-01-31 12:08:21 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-01-31 12:25:00 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-01-31 12:25:00 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-01-31 12:25:00 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-01-31 12:55:35 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-01-31 12:55:35 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-01-31 12:55:35 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-01-31 13:17:36 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-01-31 13:17:36 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-01-31 13:17:36 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+ERROR 2016-01-31 13:28:35 unity <unknown>:0 atk_object_ref_state_set: assertion 'ATK_IS_OBJECT (accessible)' failed
+ERROR 2016-01-31 13:28:35 unity <unknown>:0 atk_state_set_contains_state: assertion 'ATK_IS_STATE_SET (set)' failed
+ERROR 2016-01-31 13:28:35 unityy <unknown>:0 g_object_unref: assertion 'G_IS_OBJECT (object)' failed

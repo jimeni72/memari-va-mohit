@@ -1,0 +1,55 @@
+
+
+
+<div class="khar2">
+
+
+	 <div class="wrapper">
+	 <embed src="/iran_map.swf" ,  style=" height:600px; width:600px; ">
+  <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+    <li><a href="#tab1" class="active">انجام شده</a></li>
+    <li><a href="#tab2">در حال انجام</a></li>
+  </ul>
+  <section id="first-tab-group" class="tabgroup">
+    <div id="tab1">
+    <div    style="direction: rtl;">
+  <div style="text-align: center;">
+     <p>گسترش دانشكده حقوق و علوم سياسي دانشگاه تهران</p></br>
+	<p>مطالعات بهسازي  لرزه‌اي موزه دانشگاه تهران</p></br>
+	<p>مطالعات و اجراي بهسازي لرزه‌اي ساختمان دوره دكتراي فيزيك دانشگاه تهران</p></br>
+	<p>خوابگاه دانشگاه خواجه نصیر الدین تهران</p></br>
+    </div>
+    </div>
+    </div>
+    <div id="tab2">
+      <div    style="direction: rtl;">
+  <div style="text-align: center;">
+	<p> دانشکده هنرهای تجسمی دانشگاه هنر تهران </p></br>
+	<p> خوابگاه متأهلین دانشگاه تربیت مدرس تهران </p></br>
+	<p> توسعه خوابگاه دانشگاه علم و صنعت تهران (معاونت دانشجویی دانشگاه) </p></br>
+	<p> خوابگاه دانشکده الهیات دانشگاه تهران </p></br>
+
+
+  </div>
+  </div>
+    </div>
+  </section>
+</div>
+
+   </div>
+
+        <script >
+        $('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function(e){
+  e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+  
+})</script>

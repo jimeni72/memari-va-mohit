@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  
+<title>شرکت مشاورین معماری و محیط</title>
+
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+  <meta charset="utf-8">
+
+    <meta name="author" content="ukieweb">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  
+<body >
+<div class="page">
+<!-- **************** header ***************** -->
+
+
+
+<!--<div class="home-h" id="header">
+<%= image_tag("logom.jpg",height:'87' , width:'302')%>
+
+  
+
+</div>
+-->
+
+<header id="header">
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="brand put-left">
+                        <h1>
+                            <%= image_tag("logom.jpg",height:'35' , width:'150')%>
+
+                        </h1>
+                    </div>
+                    <nav class="nav put-right">
+                        <ul class="sf-menu">
+                        
+                            <li ><% if current_user.nil? %>
+                            <%= link_to "ورود", new_user_session_path%>
+                            
+                            <% else %>
+                            <%= link_to 'خروج' , destroy_user_session_path %>
+                            <% end %></li>
+                             <%if  current_user.nil?  %>
+                                      <li>
+                                        <%= link_to "تماس با ما", new_contact_path,:method => :get  %>
+                                          
+                                      </li>
+                                      <li>
+                                          <%= link_to "پروژه ها", ourprojects_profiles_path,:method => :get%>
+                                      </li>
+                                      <li>
+                                      
+                                      <a href="#">درباره ما</a>
+                                        
+                                        <ul>
+                                        <li ><%= link_to "تقدیر نامه ها", taghdirname_profiles_path,:method => :get %></li> 
+                                       
+                                       <li> <%= link_to "تاریخچه", darbareyema_profiles_path,:method => :get%></li>
+                                         
+                                    
+                                          </ul>
+                                      </li>
+                                      <li>
+                                      <a href="#">کادر فنی</a>
+                                      <ul>
+                                   
+                                    
+                                    
+                                    <li><%= link_to "معماری", memari_profiles_path,:method => :get%></li>
+                                       <li> <%= link_to "سازه", saze_profiles_path,:method => :get %></li>
+                                       <li> <%= link_to "تاسیسات", tasisat_profiles_path, :method => :get%></li>
+                                         <li> <%= link_to "محیط زیست", mohitezist_profiles_path,:method => :get %></li>
+                                    
+                                        </ul>
+                                       </li>
+                                      <li >
+                                        <%= link_to "خانه", root_url,:method => :get %>
+                                      </li>
+                                      
+
+                                <%end%>
+        <%if not current_user.nil? and current_user.role == 'ادمین' %>
+
+            <li>
+                                        <%= link_to "تماس با ما", new_contact_path,:method => :get  %>
+                                          
+                                      </li>
+                                      <li>
+                                          <%= link_to "پروژه ها", ourprojects_profiles_path,:method => :get%>
+                                      </li>
+                                      <li>
+                                      <a href="#">درباره ما</a>
+                                        
+                                        <ul>
+                                        <li ><%= link_to "تقدیر نامه ها", taghdirname_profiles_path,:method => :get %></li> 
+                                       <li></li>
+          
+                                       <li> <%= link_to "تاریخچه", darbareyema_profiles_path,:method => :get%></li>
+                                         
+                                    
+                                          </ul>
+                                      </li>
+                                       <li><%= link_to "ایجاد کاربر", newUser_profiles_path,:method => :get %></li>
+                                       <li> <%= link_to "لیست پروژه ها", projects_path %> </li>
+
+                                      <li>
+                                      <a href="#">کادر فنی</a>
+                                      <ul>
+                                   
+                                    
+                                    
+                                    <li><%= link_to "معماری", memari_profiles_path,:method => :get%></li>
+                                       <li> <%= link_to "سازه", saze_profiles_path,:method => :get %></li>
+                                       <li> <%= link_to "تاسیسات", tasisat_profiles_path, :method => :get%></li>
+                                         <li> <%= link_to "محیط زیست", mohitezist_profiles_path,:method => :get %></li>
+                                    
+                                        </ul>
+                                       </li>
+                                      <li >
+                                        <%= link_to "خانه", root_url,:method => :get %>
+                                      </li>
+                                      
+
+
+
+        <%end%>
+        <%if not current_user.nil? and current_user.role == 'کارفرما' %>
+              <li>
+                                        <%= link_to "تماس با ما", new_contact_path,:method => :get  %>
+                                          
+                                      </li>
+                                      <li>
+                                          <%= link_to "پروژه ها", ourprojects_profiles_path,:method => :get%>
+                                      </li>
+                                      <li>
+                                      <a href="#">درباره ما</a>
+                                        
+                                        <ul>
+                                        <li ><%= link_to "تقدیر نامه ها", taghdirname_profiles_path,:method => :get %></li> 
+                                       
+                                       <li> <%= link_to "تاریخچه", darbareyema_profiles_path,:method => :get%></li>
+                                         
+                                    
+                                          </ul>
+                                      </li>
+
+
+                                      <li>
+                                      <a href="#">کادر فنی</a>
+                                      <ul>
+                                   
+                                    
+                                    
+                                    <li><%= link_to "معماری", memari_profiles_path,:method => :get%></li>
+                                       <li> <%= link_to "سازه", saze_profiles_path,:method => :get %></li>
+                                       <li> <%= link_to "تاسیسات", tasisat_profiles_path, :method => :get%></li>
+                                         <li> <%= link_to "محیط زیست", mohitezist_profiles_path,:method => :get %></li>
+                                    
+                                        </ul>
+                                       </li>
+                                       <li><%= link_to "پروفایل من", {:action=>"show", :controller=>"profiles" , :id => current_user.id} %></li>
+                                      <li>
+                                      <li >
+                                        <%= link_to "خانه", root_url,:method => :get %>
+                                      </li>
+        <%end%>
+
+
+
+
+                        
+                    <%if not current_user.nil? and current_user.role == 'ناظر' %>
+                              <li>
+                                        <%= link_to "تماس با ما", new_contact_path,:method => :get  %>
+                                          
+                                      </li>
+                                      <li>
+                                          <%= link_to "پروژه ها", ourprojects_profiles_path,:method => :get%>
+                                      </li>
+                                      <li>
+                                      <a href="#">درباره ما</a>
+                                        
+                                        <ul>
+                                        <li ><%= link_to "تقدیر نامه ها", taghdirname_profiles_path,:method => :get %></li> 
+                                       
+                                       <li> <%= link_to "تاریخچه", darbareyema_profiles_path,:method => :get%></li>
+                                         
+                                    
+                                          </ul>
+                                      </li>
+
+
+                                      <li>
+                                      <a href="#">کادر فنی</a>
+                                      <ul>
+                                   
+                                    
+                                    
+                                    <li><%= link_to "معماری", memari_profiles_path,:method => :get%></li>
+                                       <li> <%= link_to "سازه", saze_profiles_path,:method => :get %></li>
+                                       <li> <%= link_to "تاسیسات", tasisat_profiles_path, :method => :get%></li>
+                                         <li> <%= link_to "محیط زیست", mohitezist_profiles_path,:method => :get %></li>
+                                    
+                                        </ul>
+                                       </li>
+                                       <li><%= link_to "ایجاد گزارش", new_report_path,:method => :get %></li>
+                                      <li>
+                                      <li >
+                                        <%= link_to "خانه", root_url,:method => :get %>
+                                      </li>
+
+                    <%end%>
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ************ payane header ************* -->
+
+ <% if notice.present? %>
+  <p class="notice"><%= notice %></p>
+  <% end %>
+  <% if alert.present? %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
+
+  <div >
+  <%=yield%>
+  </div>
+</div>
+
+<!-- ********** footer ********** -->
+<footer id="footer" class="color_9">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <p class="info text_4 color_4">
+                    © <span id="copyright-year">1395</span> <br/>
+                    طراحی شده توسط <a href="http://www.tpesoft.com/" rel="nofollow">tpesoft.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+      <!-- ************* payane footer *************** -->
+
+
+</body>
+</html>

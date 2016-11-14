@@ -1,0 +1,11 @@
+logrotate state -- version 2
+"/home/iran/.cache/upstart/unity-settings-daemon.log" 2016-1-31-8:0:0
+"/home/iran/.cache/upstart/gnome-session-Unity.log" 2016-1-31-8:0:0
+"/home/iran/.cache/upstart/dbus.log" 2016-1-31-8:0:0
+"/home/iran/.cache/upstart/window-stack-bridge.log" 2016-1-31-8:0:0
+"/home/iran/.cache/upstart/indicator-power.log" 2016-1-31-8:0:0
+"/home/iran/.cache/upstart/indicator-sound.log" 2016-1-31-8:0:0
+"/home/iran/.cache/upstart/update-notifier-release.log" 2016-1-31-8:0:0
+"/home/iran/.cache/upstart/im-config.log" 2016-1-31-8:0:0
+"/home/iran/.cache/upstart/indicator-bluetooth.log" 2016-1-31-8:0:0
+"/home/iran/.cache/upstart/unity7.log" 2016-1-31-8:0:0

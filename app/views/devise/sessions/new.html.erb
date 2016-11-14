@@ -1,0 +1,87 @@
+
+<div class="khar">
+  <div class="container">
+    <div class="top">
+      <h1 id="title" class="hidden"><span id="logo">ورود <span>به</span><span> سایت </span></span></h1>
+    </div>
+    <div class="login-box animated1 fadeInUp1">
+      <div class="box-header">
+      <h2>Log In</h2>
+      </div>
+      <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
+            <p>
+            <label for="username">Username</label>
+      <br/>
+                <%= f.text_field :email, autofocus: true , placeholder:"ایمیل" , style: "direction:rtl;" %>
+            <br/>    
+      <label for="password">Password</label>
+      <br/>
+                <%= f.password_field :password, autocomplete: "off" ,placeholder:"رمز عبور" ,class: "input-type" , style: "direction:rtl;"%> 
+                <br>
+                <%= f.submit "ورود"  , type:"submit" ,class:"btn_3" do%>
+
+            </p>
+            
+            <%end%> 
+            <br><br><br><br><br><br>
+        <div>
+          <% if devise_mapping.rememberable? -%>
+                
+             <font color="black" family="BNazanin">   مرا به خاطر بسپار</font> <%= f.check_box :remember_me , :value => "1" ,style:""%>
+            <% end -%>
+        </div>
+
+      <% if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+        <div class="forget-password">
+          <h4>آیا رمز عبور خود را فراموش کرده اید؟</h4> 
+          <p><font color="black" family="BNazanin">
+             نگران نباشید, روی
+              <%= link_to "اینجا", new_password_path(resource_name) ,style:"color:blue;"%><br />
+            کلیک کنید تا رمز جدید به شما داده شود!</font>
+          </p>
+        </div>
+      <% end -%>
+      <%end%>
+    </div>
+    
+  </div>
+  <div class="container">
+            <div class="row wrap_9 wrap_4 wrap_10">
+                <div class="grid_12">
+                    <div class="header_1 wrap_3 color_3">
+                        Get in Touch
+                    </div>
+                    <div class="box_3">
+                        <ul class="list_1">
+                            <li><a class="fa fa-twitter" href="#"></a></li>
+                            <li><a class="fa fa-facebook" href="#"></a></li>
+                            <li><a class="fa fa-google-plus" href="#"></a></li>
+                            <li><a class="fa fa-pinterest" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+      $('#logo').addClass('animated1 fadeInDown');
+      $("input:text:visible:first").focus();
+  });
+  $('#username').focus(function() {
+    $('label[for="username"]').addClass('selected');
+  });
+  $('#username').blur(function() {
+    $('label[for="username"]').removeClass('selected');
+  });
+  $('#password').focus(function() {
+    $('label[for="password"]').addClass('selected');
+  });
+  $('#password').blur(function() {
+    $('label[for="password"]').removeClass('selected');
+  });
+</script>
+
+
+</div>

@@ -1,0 +1,147 @@
+
+<!-- معماری -->
+<div style="width:75% ; margin-left:15%">
+  
+
+
+
+
+    </div>
+
+
+    <div class="wrapper">
+  <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+    <li><a href="#tab1" class="active"><font color="black" family="BNazanin">غلام‌رضا اسدی آذر</font></a></li>
+    <li><a href="#tab2"><font color="black" family="BNazanin">مصطفی سمیعی</font></a></li>
+    <li><a href="#tab3"><font color="black" family="BNazanin">محسن فردوسی</font></a></li>
+    <li><a href="#tab4"><font color="black" family="BNazanin">مسعود پرهیزکاری</font></a></li>
+    <li><a href="#tab5"><font color="black" family="BNazanin">حسام‌الدین هاشمی</font></a></li>
+  </ul>
+  <section id="first-tab-group" class="tabgroup">
+    <div id="tab1">
+      <div style="direction: rtl;">
+  <div style="text-align: center;">
+    <div class="thumbnail" style="border:10px outset silver;height:420px;">
+      <%= image_tag("profile.png") %>
+      <!-- <img src="/assets/profiles_pic/profile.png" > -->
+        <div class="caption">
+          <h3><font color="black" family="BNazanin">غلام‌رضا اسدی آذر</font></h3>
+         <font color="black" family="BNazanin"> سابقه کار - سال : ۲۵
+          <br>
+            مدرک تحصیلی:کارشناس برق
+            <br>
+        گروه:تاسیسات</font>
+    </div>
+      </div>
+  </div>
+</div>
+    </div>
+    <div id="tab2">
+      <div    style="direction: rtl;">
+  <div style="text-align: center;">
+    <div class="thumbnail" style="border:10px outset silver;height:420px;">
+      <%= image_tag("profile.png") %>
+      <!-- <img src="/assets/profiles_pic/profile.png" > -->
+        <div class="caption">
+          <h3><font color="black" family="BNazanin">مصطفی سمیعی</font></h3>
+         <font color="black" family="BNazanin"> سابقه کار - سال : ۴۰
+          <br>
+            مدرک تحصیلی:کارشناس مکانیک
+            <br>
+        گروه:تاسیسات</font>
+    </div>
+      </div>
+  </div>
+</div>
+</div>
+    <div id="tab3">
+      <div    style="direction: rtl;">
+  <div style="text-align: center;">
+    <div class="thumbnail" style="border:10px outset silver;height:420px;">
+      <%= image_tag("profile.png") %>
+      <!-- <img src="/assets/profiles_pic/profile.png" > -->
+        <div class="caption">
+          <h3><font color="black" family="BNazanin">محسن فردوسی</font></h3>
+          <font color="black" family="BNazanin">سابقه کار - سال : ۴۱
+          <br>
+            مدرک تحصیلی:کارشناس مکانیک
+            <br>
+        گروه:تاسیسات</font>
+    </div>
+      </div>
+  </div>
+</div>
+    </div>
+    <div id="tab4">
+      <div    style="direction: rtl;">
+  <div style="text-align: center;">
+    <div class="thumbnail" style="border:10px outset silver;height:420px;">
+      <%= image_tag("profile.png") %>
+      <!-- <img src="/assets/profiles_pic/profile.png" > -->
+        <div class="caption">
+          <h3><font color="black" family="BNazanin">مسعود پرهیزکاری</font> </h3>
+         <font color="black" family="BNazanin"> سابقه کار - سال : ۷
+          <br>
+            مدرک تحصیلی: کارشناس ارشد برق 
+            <br>
+        گروه:تاسیسات</font>
+    </div>
+      </div>
+  </div>
+</div>
+    </div>
+    <div id="tab5">
+      
+    <div    style="direction: rtl;">
+      <div style="text-align: center;">
+        <div class="thumbnail" style="border:10px outset silver;height:420px;">
+          <%= image_tag("profile.png") %>
+          <!-- <img src="/assets/profiles_pic/profile.png" > -->
+            <div class="caption">
+              <h3><font color="black" family="BNazanin">سیدحسام‌الدین هاشمی یزدی</font> </h3>
+             <font color="black" family="BNazanin"> سابقه کار - سال : ۱۱
+              <br>
+                مدرک تحصیلی:کارشناس مکانیک
+                <br>
+        گروه:تاسیسات</font>
+    </div>
+          </div>
+      </div>
+</div>
+
+    </div>
+  </section>
+</div>
+<div class="container">
+            <div class="row wrap_9 wrap_4 wrap_10">
+                <div class="grid_12">
+                    <div class="header_1 wrap_3 color_3">
+                        Get in Touch
+                    </div>
+                    <div class="box_3">
+                        <ul class="list_1">
+                            <li><a class="fa fa-twitter" href="#"></a></li>
+                            <li><a class="fa fa-facebook" href="#"></a></li>
+                            <li><a class="fa fa-google-plus" href="#"></a></li>
+                            <li><a class="fa fa-pinterest" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- معماری -->
+        <script >
+        $('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function(e){
+  e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+  
+})</script>

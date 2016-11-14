@@ -1,0 +1,102 @@
+
+
+                            <div class="wrapper">
+  <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+    <li><a href="#tab1" class="active">ویرایش پروفایل</a></li>
+    <li><a href="#tab2">پروژه ها</a></li>
+    <li><a href="#tab3">گزارش ها</a></li>
+    <li><a href="#tab4">تماس با ما</a></li>
+      </ul>
+
+  <section id="first-tab-group" class="tabgroup">
+    <div id="tab1">
+      <div    style="direction: rtl;">
+  <div style="text-align: center;">
+    <div class="thumbnail" style="border:10px outset silver; height:420px;">
+     <%=image_tag @current_user.avatar.url %>
+     <br>
+            <%= @current_user.company_name %>
+      <div class="caption">
+        <%= link_to "ویرایش پروفایل", editUser_profiles_path,:method => :get  %>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div id="tab2">
+      <div    style="direction: rtl;">
+  <div style="text-align: center;">
+    <div class="thumbnail" style="border:10px outset silver; height:420px;">
+     <%=image_tag @current_user.avatar.url %>
+     <br>
+            <%= @current_user.company_name %>
+      <div class="caption">
+        <%= link_to "پروژه ها", projehabarayesherkat_profiles_path,:method => :get  %>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div id="tab3">
+      <div    style="direction: rtl;">
+  <div style="text-align: center;">
+    <div class="thumbnail" style="border:10px outset silver; height:420px;">
+     <%=image_tag @current_user.avatar.url %>
+     <br>
+            <%= @current_user.company_name %>
+      <div class="caption">
+         <%= link_to "گزارش ها", reportbarayeproject_reports_path,:method => :get   %>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div id="tab4">
+      <div    style="direction: rtl;">
+  <div style="text-align: center;">
+    <div class="thumbnail" style="border:10px outset silver; height:420px;">
+     <%=image_tag @current_user.avatar.url %>
+     <br>
+            <%= @current_user.company_name %>
+      <div class="caption">
+        <%= link_to "تماس با ما", new_contact_path,:method => :get   %>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+</div>
+        <script >
+        $('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function(e){
+  e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+  
+})</script>
+
+<div class="container">
+            <div class="row wrap_9 wrap_4 wrap_10">
+                <div class="grid_12">
+                    <div class="header_1 wrap_3 color_3">
+                        Get in Touch
+                    </div>
+                    <div class="box_3">
+                        <ul class="list_1">
+                            <li><a class="fa fa-twitter" href="#"></a></li>
+                            <li><a class="fa fa-facebook" href="#"></a></li>
+                            <li><a class="fa fa-google-plus" href="#"></a></li>
+                            <li><a class="fa fa-pinterest" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,14 @@
+development:
+  :address: smtp.gmail.com
+  :port: 587
+  :authentication: plain
+  :user_name: memari.mohit11@gmail.com
+  :password: memari123456
+  :enable_starttls_auto: true
+production:
+  :address: smtp.gmail.com
+  :port: 587
+  :authentication: plain
+  :user_name: memari.mohit11@gmail.com
+  :password: memari123456
+  :enable_starttls_auto: true

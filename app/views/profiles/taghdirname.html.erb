@@ -1,0 +1,306 @@
+
+<style>
+  
+  /* [Object] modalmorvarid
+ * =============================== */
+.modalmorvarid {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .9);
+  transition: opacity .25s ease;
+}
+
+.modalmorvarid__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modalmorvarid-state {
+  display: none;
+}
+
+.modalmorvarid-state:checked + .modalmorvarid {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalmorvarid-state:checked + .modalmorvarid .modalmorvarid__inner {
+  top: 0;
+}
+
+.modalmorvarid__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 800px;
+}
+
+.modalmorvarid__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modalmorvarid__close:after,
+.modalmorvarid__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modalmorvarid__close:hover:after,
+.modalmorvarid__close:hover:before {
+  background: #aaa;
+}
+
+.modalmorvarid__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  
+  .modalmorvarid__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+
+
+/* Other
+ * =============================== */
+
+.btn {
+  cursor: pointer;
+  background: #27ae60;
+  display: inline-block;
+  padding: .5em 1em;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #2ecc71;
+}
+
+.btn:active {
+  background: #27ae60;
+  box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+}
+
+.btn--blue {
+  background: #2980b9;
+}
+
+.btn--blue:hover,
+.btn--blue:focus {
+  background: #3498db;
+}
+
+.btn--blue:active {
+  background: #2980b9;
+}
+
+
+</style>
+
+
+<input class="modalmorvarid-state" id="modalmorvarid-1" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-1"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-1"></label>
+    <p><img src="/assets/IMG_0001.jpg" alt="" width="600" height="900"/></p>
+  </div>
+</div>
+<input class="modalmorvarid-state" id="modalmorvarid-2" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-2"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-2"></label>
+    <p><img src="/assets/IMG_0002.jpg" alt="" width="600" height="900"/></p>
+  </div>
+</div>
+<input class="modalmorvarid-state" id="modalmorvarid-3" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-3"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-3"></label>
+    <p><img src="/assets/IMG_0003.jpg" alt="" width="600" height="900"/></p>
+  </div>
+</div>
+<input class="modalmorvarid-state" id="modalmorvarid-4" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-4"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-4"></label>
+    <p><img src="/assets/IMG_0004.jpg" alt="" width="600" height="900"/>4</p>
+  </div>
+</div>
+<input class="modalmorvarid-state" id="modalmorvarid-5" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-5"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-5"></label>
+    <p><img src="/assets/IMG_0005.jpg" alt="" width="600" height="900"/></p>
+  </div>
+</div>
+<input class="modalmorvarid-state" id="modalmorvarid-6" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-6"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-6"></label>
+    <p><img src="/assets/IMG_0006.jpg" alt="" width="600" height="900"/></p>
+  </div>
+</div>
+<input class="modalmorvarid-state" id="modalmorvarid-7" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-7"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-7"></label>
+    <p><img src="/assets/IMG_0007.jpg" alt="" width="600" height="900"/></p>
+  </div>
+</div>
+<input class="modalmorvarid-state" id="modalmorvarid-8" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-8"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-8"></label>
+    <p><img src="/assets/IMG_0008.jpg" alt="" width="600" height="900"/></p>
+  </div>
+</div>
+<input class="modalmorvarid-state" id="modalmorvarid-9" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-9"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-9"></label>
+    <p><img src="/assets/IMG_0009.jpg" alt="" width="600" height="900"/></p>
+  </div>
+</div>
+<input class="modalmorvarid-state" id="modalmorvarid-10" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-10"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-10"></label>
+    <p><img src="/assets/IMG_0010.jpg" alt="" width="600" height="900"/></p>
+  </div>
+</div>
+<input class="modalmorvarid-state" id="modalmorvarid-11" type="checkbox" />
+<div class="modalmorvarid">
+  <label class="modalmorvarid__bg" for="modalmorvarid-11"></label>
+  <div class="modalmorvarid__inner">
+    <label class="modalmorvarid__close" for="modalmorvarid-11"></label>
+    <p><img src="/assets/IMG_0011.jpg" alt="" width="600" height="900"/></p>
+  </div>
+</div>
+
+
+
+
+<div id="" style="  clear: both;
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;">
+  <div id="content" style="float: left;  ">
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0001.jpg" width="200" height="300" alt="The Mephisto Club by Tess Gerritsen" class="captionated" />
+    <br>
+        <label class="btn btn--blue" for="modalmorvarid-1">بزرگ نمایی</label>
+    </p>
+   
+
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0002.jpg" width="200" height="300" alt="Dark Celebration by Christine Freehan" class="captionated" />
+    <br>
+     <label class="btn btn--blue" for="modalmorvarid-2">بزرگ نمایی</label>
+    </p>
+    
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0003.jpg" width="200" height="300" alt="Ricochet by Sandra Brown" class="captionated" />
+    <br>
+    <label class="btn btn--blue" for="modalmorvarid-3">بزرگ نمایی</label>
+
+    </p>
+    
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0004.jpg" width="200" height="300" alt="Echo Park by Michael Connelly" class="captionated" />
+    <br>
+    <label class="btn btn--blue" for="modalmorvarid-4">بزرگ نمایی</label>
+
+    </p>
+    
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0005.jpg" width="200" height="300" alt="The World is Flat by Thomas L. Friedman" class="captionated" />
+<br>
+    <label class="btn btn--blue" for="modalmorvarid-5">بزرگ نمایی</label>
+
+    </p>
+    
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0006.jpg" width="200" height="300" alt="Act of Treason by Vince Flynn" class="captionated" />
+<br>
+    <label class="btn btn--blue" for="modalmorvarid-6">بزرگ نمایی</label>
+
+    <p>
+    
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0007.jpg" width="200" height="300" alt="Rich Dad, Poor Dad" class="captionated" />
+<br>
+    <label class="btn btn--blue" for="modalmorvarid-7">بزرگ نمایی</label>
+
+    </p>
+    
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0008.jpg" width="200" height="300" alt="Freakonomics" class="captionated" />
+<br>
+    <label class="btn btn--blue" for="modalmorvarid-8">بزرگ نمایی</label>
+
+    </p>
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0009.jpg" width="200" height="300" alt="Freakonomics" class="captionated" />
+<br>
+    <label class="btn btn--blue" for="modalmorvarid-9">بزرگ نمایی</label>
+
+    </p>
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0010.jpg" width="200" height="300" alt="Freakonomics" class="captionated" />
+        <br>
+    <label class="btn btn--blue" for="modalmorvarid-10">بزرگ نمایی</label>
+
+    </p>
+    <p style="float: left;margin: 10px 7px;"><img src="/assets/IMG_0011.jpg" width="200" height="300" alt="Freakonomics" class="captionated" />
+<br>
+    <label class="btn btn--blue" for="modalmorvarid-11">بزرگ نمایی</label>
+
+    </p>
+  </div>
+</div>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br>

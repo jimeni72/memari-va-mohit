@@ -1,0 +1,152 @@
+  <%  if not current_user.nil? %>
+            <i class="fa fa-power-off"></i>
+                
+                  <a href="index.html"> 
+                  <% if current_user.nil? %>
+                     <%= link_to "ورود", new_user_session_path , style:"background-color:white;" %>
+                      
+                     <%= link_to "ثبت نام",new_user_registration_path  , style:"padding-right:10%"%>
+                  <% else %>
+                    <%= link_to  'خروج' , destroy_user_session_path ,style:"background-color:white;", method: :delete %>
+                  <% end %>
+                  
+                  </a>
+                  </h1>
+            
+              <% end %>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+            <%if not current_user.nil? and current_user.role == 'ادمین' %>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul id="navigation" class="nav navbar-nav navbar-left">
+                
+                <li><button class="btn btn-default dropdown-toggle"style="color:white" type="button" data-toggle="dropdown"><%= link_to "خانه",  root_url  %></button></li>
+                <li><button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><%= link_to "پروژه ها",{controller: "projects", action: "index"} %></button></button></li>
+                <li><button class="btn btn-default dropdown-toggle"style="color:white" type="button" data-toggle="dropdown"><%= link_to "لیست کاربران",{controller: "profiles", action: "index"} %></button></li>
+                <li><button class="btn btn-default dropdown-toggle"style="color:white" type="button" data-toggle="dropdown"><%= link_to "گزارش ها",{controller: "reports", action: "index"} %></button></li>
+<!--                 <li><a href="#contact">تماس</a></li> -->
+              </ul>
+            </div>
+            <%end%>
+            
+            <%if not current_user.nil? and current_user.role=="ناظر"%>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul id="navigation" class="nav navbar-nav navbar-left">
+                <li><button class="btn btn-default dropdown-toggle"style="color:white" type="button" data-toggle="dropdown"><%= link_to "خانه",  root_url  %></button></li>
+               
+                </li>
+                <li><button class="btn btn-default dropdown-toggle"style="color:white" type="button" data-toggle="dropdown"><%= link_to "گزارش ها",{controller: "reports", action: "index"} %></button></li>
+<!--                 <li><a href="#contact">تماس</a></li> -->
+              </ul>
+            </div>
+
+            <%end%>
+
+            <%if not current_user.nil? and current_user.role=="کارفرما"%>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul id="navigation" class="nav navbar-nav navbar-left">
+                <li><button class="btn btn-default dropdown-toggle" style="color:white"type="button" data-toggle="dropdown"><%= link_to "خانه",  root_url  %></button></li>
+               
+                </li>
+                <li><button class="btn btn-default dropdown-toggle"style="color:white" type="button" data-toggle="dropdown"><%= link_to "پروژه ها",{controller: "projects", action: "index"} %></button></li>
+                 <li><button class="btn btn-default dropdown-toggle"style="color:white" type="button" data-toggle="dropdown" style="padding:20%"><%= link_to "پروفایل" , profiles_path(:profile_id => current_user.id)  %></button></li>
+<!--                 <li><a href="#contact">تماس</a></li> -->
+              </ul>
+            </div>
+            <%end%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <header id="header" class="site-header">
+        <nav id="topbar" class="site-topbar visible-lg visible-md">
+          <div style="margin-left:40%">به وب سایت مشاوران معماری و محیط خوش آمدید </div>
+        </nav>
+
+        <nav id="navbar" class="site-navbar navbar navbar-static-top one-page-nav" role="navigation">
+          <div class="container">
+            <div class="btn-group btn-group-lg" role="group">
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul id="navigation" class="nav navbar-nav navbar-right">
+              
+                
+                <li>
+                        <div class="dropdown" style="direction:rtl; float:right;">
+                          <button class="btn btn-default dropdown-toggle" style="padding-right:28%;padding-left:25%;" type="button" data-toggle="dropdown"><span class="caret"></span>کادر فنی
+                          </button>
+                          <ul class="dropdown-menu" style="direction:rtl;">
+                          <li><%= link_to "معماری", memari_profiles_path,:method => :get , :class => "button"%></li>
+                          <li><%= link_to "تاسیسات", tasisat_profiles_path, :method => :get ,:class => "button"%></li>
+                          <li><%= link_to "سازه", saze_profiles_path,:method => :get , :class => "button"%></li>
+                            <!-- <li style="direction:rtl;"><a href="#">تاسیسات</a></li>
+                            <li style="direction:rtl;"><a href="#">معماری</a></li>
+                            <li style="direction:rtl;"><a href="#">سازه</a></li> -->
+                          </ul>
+                        </div>
+                        </li>
+                <li><%= link_to "تقدیر نامه ها", taghdirname_profiles_path,:method => :get %></li>
+
+                        <li><%= link_to "پروژه ها", ourprojects_profiles_path,:method => :get %></li>
+                         
+                        <li><%= link_to "هیئت مدیره", mannagers_profiles_path,:method => :get %></li>
+                      
+                        <li><%= link_to "درباره ما", darbareyema_profiles_path,:method => :get %></li>
+
+                        <li><%= link_to "تماس با ما", new_contact_path,:method => :get %></li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>

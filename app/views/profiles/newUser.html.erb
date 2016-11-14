@@ -1,0 +1,152 @@
+
+<!-- multistep form -->
+<!-- <form id="mmsform">  -->
+<%= form_for(@user  , url: addUser_profiles_path ,:html => {:class => "mmsform"}) do |f| %>
+  <!-- progressbar -->
+  <!-- <ul id="progressbar">
+    <li class="active">Account Setup</li>
+    <li>Social Profiles</li>
+    <li>Personal Details</li>
+  </ul> -->
+  <!-- fieldsets -->
+  <fieldset >
+    <legend><span class="number">1</span>فرم ثبت نام</legend>
+    <h3 class="fs-subtitle"></h3>
+    <%= f.email_field :email, autofocus: true , placeholder:"ایمیل"  , style: "direction:rtl;" %>
+<!--     <input type="text" name="email" placeholder="Email" /> -->
+
+
+<!--    <input type="password" name="pass" placeholder="Password" />  -->
+   <%= f.password_field :password, autocomplete: "off" ,placeholder:"رمز عبور"  , style: "direction:rtl;"%> 
+
+<!--    <input type="password" name="cpass" placeholder="Confirm Password" />  -->
+  <%= f.password_field :password_confirmation, autocomplete: "off", placeholder:" تکرار رمز عبور"  , style: "direction:rtl;"%>
+
+  <div class="field">
+    <%= f.label :role %><br />
+    <%= f.label :role, "ناظر", :value => "ناظر" %>
+    <%= f.radio_button :role, "ناظر" %>
+    <%= f.label :role, "کارفرما", :value => "کارفرما" %>
+    <%= f.radio_button :role, "کارفرما", :checked => true %>
+  </div>
+
+ 
+     <%= f.text_field :company_name    ,placeholder:"نام شرکت" ,style: "direction:rtl;" %>
+ 
+
+     <%= f.number_field :work_experience    ,placeholder:"سابقه کاری" ,style: "direction:rtl;"%>
+
+     <%= f.text_field :register_number     ,placeholder:"شماره ثبت" ,style: "direction:rtl;"%>
+
+     <%= f.text_field :tel    ,placeholder:"شماره تلفن",style: "direction:rtl;" %>
+
+ 
+     <%= f.text_field :fax     ,placeholder:"شماره فکس" ,style: "direction:rtl;"%>
+
+  <label class="control-label" >عکس</label>
+     <%= f.file_field :avatar  ,style: "direction:rtl;" %>
+ 
+    <%= f.submit "ذخیره"  , type:"submit" ,class: "btn_3" %>
+    
+ <!--  </div> -->
+
+
+  </fieldset>
+
+
+
+<!--  </form> --> 
+<%end%>
+      
+
+      <style type="text/css">
+        form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 90%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}input,select{overflow:visible}select{text-transform:none},[type="submit"]{cursor:pointer}[disabled]{cursor:default},[type="reset"]::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type="checkbox"]{box-sizing:border-box;padding:0}[type="number"],[type="number"]{-webkit-appearance:textfield}[type="search"]::,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+
+      </style>

@@ -1,0 +1,192 @@
+<div style="height:1000px">
+                      
+                    
+                         <h1 style="margin-left:50%"> فرم ایجاد پروژه</h1>
+                      <div class="portlet-body form register span6">
+                        <!-- BEGIN FORM-->
+                        <%= form_for(@project) do |f| %>
+                          <% if @project.errors.any? %>
+                            <div id="error_explanation">
+                              <h2><%= pluralize(@project.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+                              <ul>
+                              <% @project.errors.full_messages.each do |message| %>
+                                <li><%= message %></li>
+                              <% end %>
+                              </ul>
+                            </div>
+                          <% end %>
+                        <!-- <form > -->
+                          <div class="form-body">
+                            <div class="form-group">
+                              <label class="control-label">نام شرکت</label>
+                              <select name="project[user_id]">
+                              
+                                <%@profiles.each do |p| %>
+                                <%#byebug%>
+                                  <%if not p.nil? and p.role == "کارفرما" %>
+                                    <option value="<%=p.id%>"><%=p.company_name%></option>
+                                  <%end%>
+                                <%end%>
+                              </select>
+                              <%#= f.select :user_id, select_tag(:user_id, @profiles_name) %>
+<!--                               <input type="text" class="form-control" placeholder="Enter text"> -->
+                            </div>
+
+                             <div class="form-group">
+                              <label class="control-label">نام ناظر</label>
+                              <select name="project[nazer_id]">
+                              
+                                <%@profiles.each do |p| %>
+                                <%#byebug%>
+                                  <%if not p.nil? and p.role == "ناظر" %>
+                                    <option value="<%=p.id%>"><%=p.company_name%></option>
+                                  <%end%>
+                                <%end%>
+                              </select>
+                              <%#= f.select :user_id, select_tag(:user_id, @profiles_name) %>
+<!--                               <input type="text" class="form-control" placeholder="Enter text"> -->
+                            </div>
+
+
+                            <div class="form-group">
+                              <label class="control-label">نام پروژه</label>
+                              <%= f.text_field :name, class: "form-control"  ,placeholder:"نام پروژه" %>
+<!--                               <input type="text" class="form-control" placeholder="Enter text"> -->
+                            </div>
+
+                            <div class="form-group">
+                              <label class="control-label">تاریخ شروع</label>
+                              <%= f.date_select :start_time , class: "form-control"   %>
+<!--                               <input type="text" class="form-control" placeholder="Enter text"> -->
+                            </div>
+
+                            <div class="form-group">
+                              <label class="control-label">تاریخ پایان</label>
+                              <%= f.date_select :end_time , class: "form-control"   %>
+<!--                               <input type="text" class="form-control" placeholder="Enter text"> -->
+                            </div>
+
+                            <div class="form-group">
+                              <label class="control-label">درصد پیشرفت پروژه</label>
+                              <%= f.number_field :progress_percent, class: "form-control" %>
+<!--                               <input type="text" class="form-control" placeholder="Enter text"> -->
+                            </div>
+
+
+                            <div class="form-group">
+                              <label class="control-label" >عکس</label>
+                              <%= f.file_field :avatar ,class: "form-control spinner" %>
+                              <!-- <input type="password" class="form-control spinner" placeholder="Password"> -->
+                            </div>
+                            
+                            <!-- <div class="form-group last">
+                              <label class="control-label">Static Control</label>
+                              <p class="form-control-static">
+                                 email@example.com
+                              </p>
+                            </div> -->
+                          </div>
+                          <div class="form-actions right">
+                          <%= f.submit  "ایجاد پروژه" ,style: "width:24%;background-color:#8e5fa2;color:white;line-height:191%;" , class: "btn-md"%>
+<!--                             <button type="submit" class="btn green">Submit</button>
+                            <button type="button" class="btn default">Cancel</button> -->
+                          </div>
+                          <% end %>
+                        <!-- </form> -->
+                        <!-- END FORM-->
+                      </div>
+</div>
+
+<style type="text/css">
+  
+  /*
+http://www.freshdesignweb.com/beautiful-registration-form-with-html5-and-css3.html
+*/
+
+.form{
+  background:#f1f1f1; width:470px; margin:0 auto; padding-left:50px; padding-top:20px;
+}
+.form fieldset{border:0px; padding:0px; margin:0px;}
+.form p.contact { font-size: 12px; margin:0px 0px 10px 0;line-height: 14px; font-family:Arial, Helvetica;}
+
+.form input[type="text"] { width: 400px; }
+.form input[type="email"] { width: 400px; }
+.form input[type="password"] { width: 400px; }
+.form input.birthday{width:60px;}
+.form input.birthyear{width:120px;}
+.form label { color: #000; font-weight:bold;font-size: 12px;font-family:Arial, Helvetica; }
+.form label.month {width: 135px;}
+.form input, textarea { background-color: rgba(255, 255, 255, 0.4); border: 1px solid rgba(122, 192, 0, 0.15); padding: 7px; font-family: Keffeesatz, Arial; color: #4b4b4b; font-size: 14px; -webkit-border-radius: 5px; margin-bottom: 15px; margin-top: -10px; }
+.form input:focus, textarea:focus { border: 1px solid #ff5400; background-color: rgba(255, 255, 255, 1); }
+.form .select-style {
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url(images/select-arrow.png), 
+    -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 0px solid #FFF;
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;}
+.form .gender {
+  width:410px;
+  }
+.form input.buttom{ background: #4b8df9; display: inline-block; padding: 5px 10px 6px; color: #fbf7f7; text-decoration: none; font-weight: bold; line-height: 1; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 1px 3px #999; -webkit-box-shadow: 0 1px 3px #999; box-shadow: 0 1px 3px #999; text-shadow: 0 -1px 1px #222; border: none; position: relative; cursor: pointer; font-size: 14px; font-family:Verdana, Geneva, sans-serif;}
+.form input.buttom:hover  { background-color: #2a78f6; }
+
+.container_25{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.clr{
+  clear: both;
+}
+.container_25 > header{
+  padding: 20px 30px 20px 30px;
+  margin: 0px 20px 10px 20px;
+  position: relative;
+  display: block;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.container_25 > header h1{
+  position: relative;
+  color: #498ea5;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  padding: 0px 0px 5px 0px;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+}
+.container_25 > header h1 span{
+  font-family: 'Alegreya SC', Georgia, serif;
+  font-size: 20px;
+  line-height: 20px;
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  color: #719dab;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+.container_25 > header h2{
+  font-size: 16px;
+  font-style: italic;
+  color: #2d6277;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+}
+
+</style>
+
+

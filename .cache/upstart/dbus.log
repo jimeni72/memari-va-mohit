@@ -1,0 +1,95 @@
+Activating service name='org.ayatana.bamf'
+Activating service name='org.a11y.Bus'
+Successfully activated service 'org.a11y.Bus'
+Activating service name='org.a11y.atspi.Registry'
+Successfully activated service 'org.a11y.atspi.Registry'
+
+** (at-spi2-registryd:9116): WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (at-spi2-registryd:9116): WARNING **: Unable to register client with session manager
+Activating service name='org.gtk.vfs.Daemon'
+Successfully activated service 'org.gtk.vfs.Daemon'
+Successfully activated service 'org.ayatana.bamf'
+Activating service name='ca.desrt.dconf'
+Successfully activated service 'ca.desrt.dconf'
+Activating service name='org.gnome.GConf'
+Successfully activated service 'org.gnome.GConf'
+Activating service name='com.canonical.indicator.keyboard'
+Activating service name='org.gnome.evolution.dataserver.Sources2'
+Activating service name='org.gnome.ScreenSaver'
+Activating service name='org.freedesktop.Notifications'
+Successfully activated service 'com.canonical.indicator.keyboard'
+module-cache-reaper-Message: Scanning data directories
+module-cache-reaper-Message: Scanning cache directories
+Successfully activated service 'org.freedesktop.Notifications'
+Successfully activated service 'org.gnome.evolution.dataserver.Sources2'
+Activating service name='org.gnome.evolution.dataserver.Calendar4'
+Successfully activated service 'org.gnome.ScreenSaver'
+
+** (gnome-screensaver:9394): WARNING **: Config key not handled: picture-opacity
+
+** (gnome-screensaver:9394): WARNING **: Config key not handled: primary-color
+
+** (gnome-screensaver:9394): WARNING **: Config key not handled: secondary-color
+
+** (gnome-screensaver:9394): WARNING **: Config key not handled: color-shading-type
+
+** (gnome-screensaver:9394): WARNING **: Config key not handled: show-notifications
+
+** (gnome-screensaver:9394): WARNING **: Config key not handled: picture-options
+
+** (gnome-screensaver:9394): WARNING **: Config key not handled: show-full-name-in-top-bar
+
+** (gnome-screensaver:9394): WARNING **: Config key not handled: picture-uri
+Successfully activated service 'org.gnome.evolution.dataserver.Calendar4'
+Activating service name='org.gtk.vfs.Metadata'
+Successfully activated service 'org.gtk.vfs.Metadata'
+Activating service name='org.gtk.Private.UDisks2VolumeMonitor'
+Successfully activated service 'org.gtk.Private.UDisks2VolumeMonitor'
+Activating service name='org.gtk.Private.GPhoto2VolumeMonitor'
+Successfully activated service 'org.gtk.Private.GPhoto2VolumeMonitor'
+Activating service name='org.gtk.Private.MTPVolumeMonitor'
+Successfully activated service 'org.gtk.Private.MTPVolumeMonitor'
+Activating service name='org.gtk.Private.AfcVolumeMonitor'
+Successfully activated service 'org.gtk.Private.AfcVolumeMonitor'
+** Message: Lost the name, shutting down.
+Activating service name='org.freedesktop.Telepathy.AccountManager'
+Successfully activated service 'org.freedesktop.Telepathy.AccountManager'
+Activating service name='com.canonical.indicators.webcredentials'
+Successfully activated service 'com.canonical.indicators.webcredentials'
+Activating service name='org.gnome.zeitgeist.Engine'
+Activating service name='org.gnome.zeitgeist.SimpleIndexer'
+Successfully activated service 'org.gnome.zeitgeist.Engine'
+
+** (zeitgeist-datahub:9991): WARNING **: zeitgeist-datahub.vala:229: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!
+** Message: Index must be upgraded. Doing full rebuild
+Successfully activated service 'org.gnome.zeitgeist.SimpleIndexer'
+
+** (zeitgeist-fts:9990): WARNING **: Unable to get info on application://zeitgeist-datahub.desktop
+Activating service name='com.canonical.Unity.Scope.Home'
+Successfully activated service 'com.canonical.Unity.Scope.Home'
+
+(unity-scope-home:10009): unity-scope-home-WARNING **: platform-info.vala:112: Unable to read SIM properties: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.ofono was not provided by any .service files
+Activating service name='com.canonical.Unity.Scope.Applications'
+Activating service name='com.canonical.Unity.Scope.File.Gdrive'
+Activating service name='com.canonical.Unity.Scope.LocalFiles'
+
+(process:10025): unity-files-daemon-WARNING **: folder.vala:65: Failed to read favorites: Failed to open file '/home/iran/.gtk-bookmarks': No such file or directory
+Successfully activated service 'com.canonical.Unity.Scope.LocalFiles'
+Successfully activated service 'com.canonical.Unity.Scope.File.Gdrive'
+Successfully activated service 'com.canonical.Unity.Scope.Applications'
+Activating service name='com.canonical.Unity.Scope.Music'
+Successfully activated service 'com.canonical.Unity.Scope.Music'
+
+(unity-music-daemon:10058): unity-music-daemon-WARNING **: rhythmbox-collection.vala:510: Unable to open album-art DB!
+
+(unity-music-daemon:10058): unity-music-daemon-WARNING **: rhythmbox-collection.vala:574: Error while parsing rhythmbox DB: Error opening file: No such file or directory
+Activating service name='com.ubuntu.OneConf'
+Successfully activated service 'com.ubuntu.OneConf'
+WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/iran/.cache/oneconf/33881d34c108ecf71563a6d356ae5ffe/other_hosts'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+Activating service name='com.ubuntu.sso'
+Successfully activated service 'com.ubuntu.sso'
+module-cache-reaper-Message: Reaping abandoned data directories
+module-cache-reaper-Message: Reaping abandoned cache directories

@@ -1,0 +1,121 @@
+            
+                <div class="khar2">
+
+     <div class="wrapper">
+     <div class="container">
+            <div class="row wrap_11">
+                <div class="grid_12">
+                    <h2 class="header_2 indent_4 color_6" >Find Us</h2>
+                </div>
+            </div>
+        </div>
+<div class="row">
+                    <div class="grid_12">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d937.6020595924025!2d51.46066537273384!3d35.74485170616784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m3!3m2!1d35.7452469!2d51.4618639!4m0!5e1!3m2!1sen!2sir!4v1475928606599" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+  <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+    <li><a href="#tab1" class="active"><font color="black" family="BNazanin">اطلاعات شرکت</font></a></li>
+    <li><a href="#tab2"><font color="black" family="BNazanin">ارسال پیام</font></a></li>
+  </ul>
+  <section id="first-tab-group" class="tabgroup">
+    <div id="tab1"  style="direction: rtl; text-align: center;">
+                            <address>
+                                <p class="text_7 color_6" align="right"><font color="black" family="BNazanin">
+                                     آدرس : خیابان خواجه عبدالله انصاری - خیابان شهید عراقی - کوچه زنبق 
+                                     - شماره ۱۱ - واحد ۱و۲
+           </font>
+                                </p>
+                                <p class="text_8"  align="right">
+                                    Our <a href="http://www.templatemonster.com/" rel="nofollow">premium website templates</a> go with 24/7 support. <br/>
+                                    <br/>
+                                    If you have any questions about customization of free themes, address <br/>
+                                    to guys from <a href="http://www.templatetuning.com/" rel="nofollow">TemplateTuning</a>. Note that it's a paid service. <br/>
+                                    <br/>
+                                    The Company Name Inc. <br/>
+                                    9870 St Vincent Place, <br/>
+                                    Glasgow, DC 45 Fr 45. <br/>
+                                    Telephone: +1 800 603 6035 <br/>
+                                    FAX: +1 800 889 9898 <br/>
+                                    E-mail: <a href="#">mail@demolink.org</a>
+                                </p>
+                            </address>
+    </div>
+    <div id="tab2" style="direction: rtl; text-align: center;">
+                            <%= form_for(@contact , :html=>{ :id=>"contact-form"} )do |f|  %>
+                              <% if @contact.errors.any? %>
+                                <div id="error_explanation">
+                                  <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+                                  <ul>
+                                  <% @contact.errors.full_messages.each do |message| %>
+                                    <li><%= message %></li>
+                                  <% end %>
+                                  </ul>
+                                </div>
+                              <% end %>
+                                <label for="name" class="name"><font color="black" family="BNazanin">نام</font> </label>
+                                <%= f.text_field :name%>
+                                <label for="email" class="email"><font color="black" family="BNazanin">ایمیل</font></label>
+                                <%= f.text_field :email%>
+                                <label for="subject" class="phone"><font color="black" family="BNazanin">موضوع</font></label>
+                                <%= f.text_field :subject%>
+                                <label for="message" class="message"><font color="black" family="BNazanin">متن پیام</font>
+                                </label>
+                                <%= f.text_area :body %>
+                                <a class="btn_3" href="#" data-type="reset">پاک کردن</a>
+                                <%= f.submit "ارسال", class:"btn_3"%>
+                                <div class="modal fade response-message">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                You message has been sent! We will be in touch soon.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    </div>
+</section>
+</div>
+</div>
+
+        <div class="container">
+            <div class="row wrap_9 wrap_4 wrap_10">
+                <div class="grid_12">
+                    <div class="header_1 wrap_3 color_3">
+                        Get in Touch
+                    </div>
+                    <div class="box_3">
+                        <ul class="list_1">
+                            <li><a class="fa fa-twitter" href="#"></a></li>
+                            <li><a class="fa fa-facebook" href="#"></a></li>
+                            <li><a class="fa fa-google-plus" href="#"></a></li>
+                            <li><a class="fa fa-pinterest" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<%end%>
+        <script >
+        $('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function(e){
+  e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+  
+})</script>

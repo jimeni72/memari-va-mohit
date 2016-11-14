@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Contacts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.name %></td>
+        <td><%= contact.email %></td>
+        <td><%= contact.body %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contact', new_contact_path %>

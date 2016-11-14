@@ -1,0 +1,69 @@
+
+<div class="khar2">
+
+
+	 <div class="wrapper">
+	 <embed src="/iran_map.swf" ,  style=" height:600px; width:600px; ">
+  <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+    <li><a href="#tab1" class="active">انجام شده</a></li>
+    <li><a href="#tab2">در حال انجام</a></li>
+  </ul>
+  <section id="first-tab-group" class="tabgroup">
+    <div id="tab1">
+    <div    style="direction: rtl;">
+  <div style="text-align: center;">
+  <p> طرح جامع دانشگاه اراك </p></br>
+	<p> مجتمع ورزشی و استخر شنای دانشگاه اراک </p></br>
+	<p> دانشكده علوم‌پايه دانشگاه اراك </p></br>
+	<p> دانشكده فني و مهندسي دانشگاه اراك </p></br>
+	<p> مجتمع خوابگاهي دانشگاه اراك شماره 1 </p></br>
+	<p> مجتمع خوابگاهي دانشگاه اراك شماره 2 </p></br>
+	<p>سالن غذا‌خوري دانشگاه اراك</p></br>
+	<p> محوطه‌سازي خوابگاه دانشجويان دانشگاه اراك </p></br>
+	<p> محوطه‌سازي دانشكده علوم پايه دانشگاه اراك </p></br>
+	<p> بانك شعبه دانشگاه اراك</p></br>
+	<p> مسجد دانشگاه اراک </p></br>
+	<p> محوطه‌سازی دانشکده فنی و مهندسی دانشگاه اراک </p></br>
+	<p> محوطه‌سازی بانک و مسجد دانشگاه اراک </p></br>
+	<p> محوطه‌سازي خانه‌هاي سازماني دانشگاه اراك</p></br>
+	<p> طراحي تسهيلات زير بنايي پرديس دانشگاه اراك و اجراي مرحله اول آن</p></br>
+	<p> سالن ورزشی مجموعه خوابگاهی دانشگاه اراک </p></br>
+    </div>
+    </div>
+    </div>
+    <div id="tab2">
+      <div    style="direction: rtl;">
+  <div style="text-align: center;">
+  <p> محوطه‌سازی ساختمان مرکزی دانشگاه اراک </p></br>
+	<p>  دانشکده کشاورزی دانشگاه اراک</p></br>
+	<p> محوطه‌سازی ورزشگاه دانشگاه اراک </p></br>
+	<p> محوطه‌سازی راه دسترسی سازمان مرکزی دانشگاه اراک </p></br>
+	<p> سالن ورزشی شماره 2 دانشگاه اراک </p></br>
+	<p> آمفی تأتر  دانشگاه اراک </p></br>
+	<p> خوابگاه دانشجویان دانشگاه اراک ( شماره 3 ) </p></br>
+	<p>   سازمان مرکزی دانشگاه اراک </p></br>
+	<p> کتابخانه مرکزی دانشگاه اراک </p></br>
+	<p> دانشکده ادبیات و علوم انسانی دانشگاه اراک </p></br>
+	<p> سالن غذاخوری شماره 2  دانشگاه اراک </p></br>
+  </div>
+  </div>
+    </div>
+  </section>
+</div>
+   </div>
+
+        <script >
+        $('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function(e){
+  e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+  
+})</script>

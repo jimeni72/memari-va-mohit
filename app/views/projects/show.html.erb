@@ -1,0 +1,129 @@
+<p id="notice"><%= notice %></p>
+
+<section id="pricing-table">
+            <div class="container">
+                <div class="row">
+                    <div class="pricing">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="pricing-table">
+                                <div class="pricing-header">
+                                    <p class="pricing-title">
+                                      <%= @project.name %>
+
+                                    </p>
+                                    <div>
+                                        <%=image_tag @project.avatar.url %>
+                                        <%= @project.image %>
+                                    </div>
+                                </div>
+
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li><strong>Start time:</strong>
+                                        <%= @project.start_time %></li>
+                                        <li><span>End time:</span>   <strong></strong>
+                                        <%= @project.end_time %></li>
+                                        <li><span>User_id:</span> <strong></strong>
+                                        <%= @project.user_id %></li>
+                                        <li><strong>nazer_id:</strong><%= @project.nazer_id %></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
+
+
+<style type="text/css">
+  
+  /*Font Loded*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+.btn-custom {
+  color: #bdc3c7;
+  font-size: 18px;
+  border: 1px solid #bdc3c7;
+}
+.btn-custom:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+#pricing-table {
+  padding-top: 50px;
+}
+#pricing-table .pricing {
+  marign: 0;
+  padding: 0;
+  font-family: 'Robot', sans-serif;
+}
+#pricing-table .pricing .pricing-table {
+  padding-bottom: 30px;
+}
+#pricing-table .pricing .pricing-table .pricing-header {
+  position: relative;
+  background: #34495e;
+  padding: 22px 22px;
+  text-align: center;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+#pricing-table .pricing .pricing-table .pricing-header .pricing-title {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+#pricing-table .pricing .pricing-table .pricing-header .pricing-rate {
+  font-size: 70px;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+#pricing-table .pricing .pricing-table .pricing-header .pricing-rate sup {
+  font-size: 24px;
+  position: relative;
+  top: -30px;
+  color: #bdc3c7;
+}
+#pricing-table .pricing .pricing-table .pricing-header .pricing-rate span {
+  font-size: 16px;
+  color: #bdc3c7;
+  text-transform: uppercase;
+}
+#pricing-table .pricing .pricing-list {
+  padding: 20px 0 40px 0;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+}
+#pricing-table .pricing .pricing-list ul {
+  padding: 0px;
+  display: table;
+  margin: 0px auto;
+}
+#pricing-table .pricing .pricing-list ul li {
+  list-style: none;
+  border-bottom: 1px solid #EAECEB;
+  color: #bdc3c7;
+  font-size: 16px;
+  line-height: 42px;
+}
+#pricing-table .pricing .pricing-list ul li:last-child {
+  border: none;
+}
+#pricing-table .pricing .pricing-list ul li i {
+  margin-right: 12px;
+  color: #bdc3c7;
+}
+#pricing-table .pricing .pricing-list ul li span {
+  color: #34495e;
+}
+</style>

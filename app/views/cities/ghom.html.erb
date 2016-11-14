@@ -1,0 +1,48 @@
+
+
+
+
+
+<div class="khar2">
+
+
+	 <div class="wrapper">
+	 <embed src="/iran_map.swf" ,  style=" height:600px; width:600px; ">
+  <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+    <li><a href="#tab1" class="active">انجام شده</a></li>
+    <li><a href="#tab2">در حال انجام</a></li>
+  </ul>
+  <section id="first-tab-group" class="tabgroup">
+    <div id="tab1">
+    <div    style="direction: rtl;">
+  <div style="text-align: center;">
+    </div>
+    </div>
+    </div>
+    <div id="tab2">
+      <div    style="direction: rtl;">
+  <div style="text-align: center;">
+  <p>مجتمع خوابگاهی برادران ساختمان خوابگاهی دانشگاه صنعتی شیراز</p>
+  </div>
+  </div>
+    </div>
+  </section>
+</div>
+
+   </div>
+
+        <script >
+        $('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function(e){
+  e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+  
+})</script>
